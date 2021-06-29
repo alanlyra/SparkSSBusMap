@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" href="css/style.css">
+  	<title>Trabalho Big Data</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style-map.css">
+
+    <!-- Conta Para Dev Google Maps -->
+    <script src="https://maps.google.com/maps/api/js"></script>
+
+    <!-- Conta Ativada Google Maps -->
+    <!--<script src="https://maps.google.com/maps/api/js?key=AIzaSyDcZISCjeAWXw7JYSZoq64NphVrLRkW7j8&callback=initMap"></script> -->
+
+    <!-- <script src="dir.php"></script> -->
+
+  </head>
+
+<body style="padding:0px;">
+	<div class="site">
+		<header class="l-cabecalho">
+      <input type="text" id="titleWork" value="Cadê meu ônibus?" readonly style="border:0; color:#06928a; font-weight:bold; text-align: center; font-size: 28px; background-color:white;">
+ 				<div class="container">
+				  <table width=100%> <tr class="menubar"> <td width=100% style="background-color:#1abc9c"> <table> <tr>
+    		</div>
+      </div></tr></table></td></tr></table></div>
+		</header>
+		<main>
+			<header class="main-header">
+			</header>
+
+			<div class="container" >
+
+        <p>
+          <input type="text" id="amount" readonly style="border:0; color:#06928a; font-weight:bold; text-align: center; font-size: 16px;">
+        </p>
+
+        <select id="linha" style="float:left; height:52px;">
+          <option value="BRTUFRJ">BRTUFRJ</option>
+        	<option value="5800A1">5800A1</option>
+        	<option value="702A1">702A1</option>
+        	<option value="5804A1">5804A1</option>
+        	<option value="355A1">355A1</option>
+        	<option value="871A1">871A1</option>
+        	<option value="40">40</option>
+        	<option value="890A1">890A1</option>
+        	<option value="76">76</option>
+        	<option value="50">50</option>
+        	<option value="610A1">610A1</option>
+        	<option value="5850A1">5850A1</option>
+        	<option value="SV823A">SV823A</option>
+        	<option value="5801A1">5801A1</option>
+        	<option value="5805A1">5805A1</option>
+        	<option value="853V1">853V1</option>
+        	<option value="42">42</option>
+        	<option value="21A">21A</option>
+        	<option value="25">25</option>
+        	<option value="858A1">858A1</option>
+        	<option value="5808A1">5808A1</option>
+        	<option value="882A1">882A1</option>
+        	<option value="5700A1">5700A1</option>
+        	<option value="928A1">928A1</option>
+        	<option value="5707A1">5707A1</option>
+        	<option value="854B1">854B1</option>
+        	<option value="853A1">853A1</option>
+        	<option value="721A1">721A1</option>
+        	<option value="5702A1">5702A1</option>
+        	<option value="LECD23">LECD23</option>
+        	<option value="879A1">879A1</option>
+        	<option value="897A1">897A1</option>
+        	<option value="891A1">891A1</option>
+        	<option value="883A1">883A1</option>
+        	<option value="991A1">991A1</option>
+        	<option value="5800N1">5800N1</option>
+        	<option value="827A1">827A1</option>
+        	<option value="873A1">873A1</option>
+        	<option value="38">38</option>
+        	<option value="896A1">896A1</option>
+        	<option value="34">34</option>
+        	<option value="5704A1">5704A1</option>
+        	<option value="954A1">954A1</option>
+        	<option value="5802A1">5802A1</option>
+        	<option value="817A1">817A1</option>
+        	<option value="22">22</option>
+        	<option value="832A1">832A1</option>
+        	<option value="5704N1">5704N1</option>
+        	<option value="856A1">856A1</option>
+        	<option value="910A">910A</option>
+        	<option value="SR872A1">SR872A1</option>
+        	<option value="855A1">855A1</option>
+        	<option value="8">8</option>
+        	<option value="25">25</option>
+        	<option value="610A1">610A1</option>
+        	<option value="5707A1">5707A1</option>
+        	<option value="53">53</option>
+        	<option value="5702A1">5702A1</option>
+        	<option value="877A1">877A1</option>
+        	<option value="5805A1">5805A1</option>
+        	<option value="5800A1">5800A1</option>
+        	<option value="953A1">953A1</option>
+        	<option value="916A1">916A1</option>
+        	<option value="5850A1">5850A1</option>
+        	<option value="828A1">828A1</option>
+        	<option value="932A1">932A1</option>
+        	<option value="810A">810A</option>
+        	<option value="55">55</option>
+        	<option value="939A">939A</option>
+        	<option value="721A1">721A1</option>
+        	<option value="SR870A">SR870A</option>
+        	<option value="SV870A1">SV870A1</option>
+        	<option value="5809A1">5809A1</option>
+        	<option value="875A1">875A1</option>
+        	<option value="5700N1">5700N1</option>
+        	<option value="963A1">963A1</option>
+        	<option value="5850N1">5850N1</option>
+        	<option value="5811N1">5811N1</option>
+        	<option value="896N1">896N1</option>
+        	<option value="094A1">094A1</option>
+        	<option value="810A1">810A1</option>
+        	<option value="SP899">SP899</option>
+        	<option value="90">90</option>
+        	<option value="5703A1">5703A1</option>
+        	<option value="891N1">891N1</option>
+        	<option value="5805N">5805N</option>
+        	<option value="5706A1">5706A1</option>
+        	<option value="19">19</option>
+        	<option value="355N1">355N1</option>
+        	<option value="SV870">SV870</option>
+        	<option value="5811A1">5811A1</option>
+        </select>
+        <!-- <select id="linha">
+          <option value='871A1'>871A1</option>
+          <option value='SV823A'>SV823A</option>
+          <option value='355A1'>355A1</option>
+          <option value='853V1'>853V1</option>
+          <option value='858A1'>858A1</option>
+          <option value='5800A1'>5800A1</option>
+          <option value='890A1'>890A1</option>
+          <option value='879A1'>879A1</option>
+          <option value='827A1'>827A1</option>
+          <option value='38'>38</option>
+          <option value='991A1'>991A1</option>
+          <option value='5805A1'>5805A1</option>
+          <option value='954A1'>954A1</option>
+          <option value='883A1'>883A1</option>
+          <option value='817A1'>817A1</option>
+          <option value='897A1'>897A1</option>
+          <option value='853A1'>853A1</option>
+          <option value='SR872A1'>SR872A1</option>
+          <option value='42'>42</option>
+          <option value='953A1'>953A1</option>
+          <option value='832A1'>832A1</option>
+          <option value='5700A1'>5700A1</option>
+          <option value='5850A1'>5850A1</option>
+          <option value='5704A1'>5704A1</option>
+          <option value='932A1'>932A1</option>
+          <option value='5702A1'>5702A1</option>
+          <option value='LECD23'>LECD23</option>
+          <option value='25'>25</option>
+          <option value='854B1'>854B1</option>
+          <option value='916A1'>916A1</option>
+          <option value='SR870A'>SR870A</option>
+          <option value='855A1'>855A1</option>
+          <option value='50'>50</option>
+          <option value='5704N1'>5704N1</option>
+          <option value='SV870A1'>SV870A1</option>
+          <option value='928A1'>928A1</option>
+          <option value='5800N1'>5800N1</option>
+          <option value='877A1'>877A1</option>
+          <option value='721A1'>721A1</option>
+          <option value='5804A1'>5804A1</option>
+          <option value='21A'>21A</option>
+          <option value='910A'>910A</option>
+          <option value='5811N1'>5811N1</option>
+          <option value='896N1'>896N1</option>
+          <option value='939A'>939A</option>
+          <option value='896A1'>896A1</option>
+          <option value='891N1'>891N1</option>
+          <option value='610A1'>610A1</option>
+          <option value='355N1'>355N1</option>
+          <option value='5808A1'>5808A1</option>
+        </select> -->
+        <div class="alert alert-warning" role="alert" style="float:left; width: 88.5%;text-align: center; margin:0px;">
+          Aguarde! Atualizando...
+        </div>
+				<table>
+  				<tr>
+  				    <td width=470 valign=top>
+                   <div id="map"></div>
+  				    </td>
+  				</tr>
+				</table>
+			</div>
+		</main>
+		<footer class="l-footer">
+      	<span class="versao-sistema">  </span>
+        <img src="images/logo-fetranspor.png" alt="FETRANSPOR" class="logo-desfensoria" style="width:120px; height:"90px"">
+        <img src="images/logo-coppe.png" alt="COPPE" class="logo-desfensoria" style="width:120px; height:"90px"">
+    </footer>
+	</div>
+</body>
+
+<script src="./js/jquery/jquery-2.1.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js"></script>
+
+
+
+<script>
+
+    var positions;
+    var map;
+    var locations;
+    var infowindow;
+    var markers = [];
+
+
+    function reload(async){
+      $.ajax({
+          async: async,
+          url: 'dir.php',
+          type: 'post',
+          data: { "callFunc1": "../exec/out/"},
+          success: function(response) {
+            $.ajax({
+              async: async,
+              type: "GET",
+              //url: "0.csv",
+              url: "../exec/out/"+response,
+              dataType: "text",
+              success: function(csv) {
+              //toJSON function here
+              csvJSON(csv);
+              addMarker();
+              }
+            });
+          }
+      });
+    }
+
+    function csvJSON(csv){
+      positions = null;
+      var lines=csv.split("\n");
+      var result = [];
+      var headers=lines[0].split(",");
+      for(var i=1;i<lines.length;i++){
+    	  var obj = {};
+    	  var currentline=lines[i].split(",");
+    	  for(var j=0;j<headers.length;j++){
+    		  obj[headers[j]] = currentline[j];
+    	  }
+    	  result.push(obj);
+      }
+
+      positions = result;
+    }
+
+    function renameQuery(linha){
+      $.ajax({
+          // async: async,
+          url: 'dir.php',
+          type: 'post',
+          data: { "renameQuery": linha},
+          success: function(response) {
+            if(response){
+              console.log("query alterada");
+            }
+          }
+      });
+    }
+
+
+</script>
+
+<script>
+  $(function(){
+
+    $('select').on('change', function() {
+        $( "#amount" ).val( "BRT - Linha " + this.value );
+        renameQuery(this.value);
+        $(".alert-warning").show();
+    });
+
+    reload(false);
+    $( "#amount" ).val( "BRT - Linha BRTUFRJ" );
+    renameQuery("BRTUFRJ");
+    locations = [];
+
+    for(chave in positions){
+      if(positions[chave]["linha"] == $('select').val())
+        locations.push(['<b> Linha: ' + positions[chave]["linha"] + '</b><br><br> Veículo: ' + positions[chave]["codigo"] + '<br> Sentido: ' + positions[chave]["sentido"] + '<br> Velocidade: ' + positions[chave]["velocidade"] + '<br> Trajeto: ' + positions[chave]["trajeto"], positions[chave]["latitude"], positions[chave]["longitude"], 2, "https://maps.google.com/mapfiles/ms/micons/bus.png"]);
+    }
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(-22.970722, -43.182365), //Copacabana LatLong
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    infowindow = new google.maps.InfoWindow();
+    var timer = setInterval(recarregar, 5000);
+  });
+
+   function recarregar() {
+     reload(true);
+   }
+  function deleteMarkers() {
+    for (var i = 0; i < markers.length; i++) {
+      markers[i].setMap(null);
+    }
+  }
+
+  function addMarker(){
+    if (typeof markers !== 'undefined') {
+      deleteMarkers();
+    }
+    var marker, i;
+    if (typeof locations !== 'undefined') {
+      locations = [];
+      for(chave in positions){
+        if(positions[chave]["linha"] == $('select').val()){
+          locations.push(['<b> Linha: ' + positions[chave]["linha"] + '</b><br><br> Veículo: ' + positions[chave]["codigo"] + '<br> Sentido: ' + positions[chave]["sentido"] + '<br> Velocidade: ' + positions[chave]["velocidade"] + '<br> Trajeto: ' + positions[chave]["trajeto"], positions[chave]["latitude"], positions[chave]["longitude"], 2, "https://maps.google.com/mapfiles/ms/micons/bus.png"]);
+          $(".alert-warning").hide();
+        }
+      }
+      for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+          icon: locations[i][4],
+          map: map
+        });
+        markers.push(marker);
+        google.maps.event.addListener(marker, 'click', (function (marker, i) {
+          return function () {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+    }
+
+  }
+
+</script>

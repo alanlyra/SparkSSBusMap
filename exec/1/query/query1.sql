@@ -1,0 +1,1 @@
+select * from StreamingLoop1 where linha = 'BRTUFRJ'

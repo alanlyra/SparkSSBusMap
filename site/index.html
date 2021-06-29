@@ -43,7 +43,7 @@
 
         <div style="float:left;">
           <p type="text" style="float:left; border:0; color:#06928a; font-weight:bold; text-align: center; font-size: 16px; margin-right:10px;">
-            Selecione a linha para visualizar no mapa:
+            Selecione a linha de ônibus para visualizar no mapa:
           </p>
 
         <select id="linha"  class="form-select" aria-label="Default select example" style="float:left; height:32px; margin-top: -5px;">
@@ -239,13 +239,13 @@
   $(function(){
 
     $('select').on('change', function() {
-        $( "#amount" ).val( "BRT - Linha " + this.value );
+        $( "#amount" ).val( "LINHA: " + this.value );
         renameQuery(this.value);
         $(".alert-warning").show();
     });
 
     reload(false);
-    $( "#amount" ).val( "BRT - Linha BRTUFRJ" );
+    $( "#amount" ).val( "LINHA: BRTUFRJ" );
     renameQuery("BRTUFRJ");
     locations = [];
 

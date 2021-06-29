@@ -1,1 +1,1 @@
-select * from StreamingLoop1 where linha = '702A1'
+select * from StreamingLoop1 where linha = 'BRTUFRJ'

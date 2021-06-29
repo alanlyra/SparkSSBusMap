@@ -43,7 +43,7 @@ object StreamingLoop {
 
   // Filesystem vars & functions
    
-  val base_dir: String = "/home/alan/git/SparkStreamingMap/exec"
+  val base_dir: String = "/home/alan/git/SparkSSBusMap/exec"
   val data_dir: String = "/data"
   val query_dir: String = "/query"
   val out_dir: String =  "/out"
@@ -119,7 +119,7 @@ object StreamingLoop {
       println ("No steps detected. Exiting...")
       return
     }
-    println("Detected " + stepDirs.length + " steps for this workflow. ")
+    println("Detected " + stepDirs.length + " steps for this workflow of Big Data. ")
     
     steps = stepDirs.length
     data_in = new Array[String](stepDirs.length)

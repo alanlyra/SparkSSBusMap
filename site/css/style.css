@@ -71,7 +71,7 @@ nav ul {
 .site {
   position: relative;
   min-height: 100%;
-  padding-bottom: 100px; }
+  padding-top: 20px; }
 
 .container, .container__fluxo-CRC {
   margin: auto;
@@ -124,7 +124,8 @@ nav ul {
     font-family: "robotobold"; }
 
 main .container, main .container__fluxo-CRC {
-  max-width: 960px;
+  width: 80% !important;
+  max-width: 100% !important;
   background-color: #ffffff;
   padding: 20px; }
 
